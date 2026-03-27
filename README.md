@@ -45,12 +45,12 @@ src/
 
 1. Clone este repositório:
    ```bash
-   git clone [https://github.com/seu-usuario/simulador-processos.git](https://github.com/seu-usuario/simulador-processos.git)
+   git clone [https://github.com/NicolasDev-web/Simulador-de-Processos-e-Escalonamento---SO.git](https://github.com/NicolasDev-web/Simulador-de-Processos-e-Escalonamento---SO.git)
    ```
 
 2. Navegue até a pasta de código-fonte (`src`):
    ```bash
-   cd simulador-processos/src
+   cd Simulador-de-Processos-e-Escalonamento---SO/src
    ```
 
 3. Compile os pacotes e a classe principal juntos:
@@ -72,4 +72,3 @@ Tempo de Retorno Médio (Turnaround): 5.33 u.t.
 Tempo de Resposta Médio: 2.33 u.t.
 =============================
 ```
-=============================
