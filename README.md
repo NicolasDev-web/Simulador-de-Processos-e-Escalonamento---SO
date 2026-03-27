@@ -34,3 +34,42 @@ src/
 │   ├── GerenciadorProcessos.java  # Banco de dados em memória para gestão dos cadastros
 │   └── CalculadoraMetricas.java   # Motor de consolidação matemática (Turnaround/Resposta)
 └── Main.java                      # Ponto de entrada e Menu Textual CLI
+```
+
+## ⚙️ Como Compilar e Executar na sua Máquina
+
+**Pré-requisitos:**
+* Java Development Kit (JDK) 11 ou superior instalado.
+
+**Passo a passo:**
+
+1. Clone este repositório:
+   ```bash
+   git clone [https://github.com/seu-usuario/simulador-processos.git](https://github.com/seu-usuario/simulador-processos.git)
+   ```
+
+2. Navegue até a pasta de código-fonte (`src`):
+   ```bash
+   cd simulador-processos/src
+   ```
+
+3. Compile os pacotes e a classe principal juntos:
+   ```bash
+   javac modelo/*.java escalonadores/*.java core/*.java Main.java
+   ```
+
+4. Execute o sistema:
+   ```bash
+   java Main
+   ```
+
+## 📊 Exemplo de Saída (Linha do Tempo)
+
+```text
+=== RESULTADOS E MÉTRICAS ===
+Processos concluídos com sucesso: 3
+Tempo de Retorno Médio (Turnaround): 5.33 u.t.
+Tempo de Resposta Médio: 2.33 u.t.
+=============================
+```
+=============================
