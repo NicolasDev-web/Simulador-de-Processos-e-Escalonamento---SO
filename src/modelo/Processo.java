@@ -10,13 +10,26 @@ public class Processo {
     private int instantePrimeiraExecucao;
     private int tempoConclusao;
 
+    // Construtor principal usado em cenários e entrada manual
     public Processo(int id, int tempoChegada, int tempoExecucaoTotal) {
         this.id = id;
         this.tempoChegada = tempoChegada;
         this.tempoExecucaoTotal = tempoExecucaoTotal;
         this.tempoRestante = tempoExecucaoTotal;
-        this.estado = EstadoProcesso.PRONTO; // Todo processo nasce pronto
-        this.instantePrimeiraExecucao = -1;  // -1 indica que ainda não foi executado
+        this.estado = EstadoProcesso.PRONTO;
+        this.instantePrimeiraExecucao = -1;
+        this.tempoConclusao = 0;
+    }
+
+    // Construtor de cópia para não poluir os cenários de teste
+    public Processo(Processo p) {
+        this.id = p.id;
+        this.tempoChegada = p.tempoChegada;
+        this.tempoExecucaoTotal = p.tempoExecucaoTotal;
+        this.tempoRestante = p.tempoExecucaoTotal; // Reseta o tempo
+        this.estado = EstadoProcesso.PRONTO;       // Reseta o estado
+        this.instantePrimeiraExecucao = -1;        // Reseta as métricas //Fiz essa mudança por conta que senão ia acabar sujando o processo com dados de outros processos, sacou misera. tenho que apagar isso dps plmds
+        this.tempoConclusao = 0;
     }
 
     // Método que simula 1 unidade de tempo na CPU
