@@ -1,3 +1,4 @@
+package modelo;
 public enum EstadoProcesso {
     PRONTO,
     EM_EXECUCAO,
